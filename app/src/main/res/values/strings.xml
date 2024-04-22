@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">File Translator</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="language_spinner">
+        <item>Select Language</item>
+        <item>Tamil</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Telugu</item>
+        <item>Malay</item>
+        <item>Kannada</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="spinner_values">
+        <item>SL</item>
+        <item>TA</item>
+        <item>EN</item>
+        <item>HI</item>
+        <item>TE</item>
+        <item>MS</item>
+        <item>KN</item>
+        <item>ZH</item>
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!--edit text to enter your input-->
+        <EditText
+            android:id="@+id/idEdtLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:hint="Enter your name to translate"
+            android:padding="4dp"
+            android:textColor = "?android:textColorPrimary"
+            android:textSize="20sp" />
+
+        <!--button to translate language of the input text-->
+        <Button
+            android:id="@+id/idBtnTranslateLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVTranslatedLanguage"
+            android:layout_centerInParent="true"
+            android:text="Translate language" />
+        <Button
+            android:id="@+id/idCleartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idBtnTranslateLanguage"
+            android:layout_marginTop="30px"
+            android:layout_centerInParent="true"
+            android:text="Clear" />
+
+        <ImageButton
+            android:id="@+id/idcopytext"
+            android:layout_width="61dp"
+            android:layout_height="46dp"
+            android:layout_below="@id/idTVTranslatedLanguage"
+            android:layout_toRightOf="@id/idBtnTranslateLanguage"
+            android:padding="10px"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/copy_ic_foreground" />
+        <!-- more attributes ... -->
+
+        <!--text view to display the translated text-->
+        <TextView
+            android:id="@+id/idTVTranslatedLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:hint="Translated language"
+            android:layout_below="@+id/idEdtLanguage"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_choose_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:layout_below="@+id/idCleartext"
+            android:layout_marginTop="30px"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_file_path"
+            android:layout_below="@+id/btn_choose_file"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:hint="File Path"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_file_uri"
+            android:layout_below="@+id/tv_file_path"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:hint="File URI"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</ScrollView>
