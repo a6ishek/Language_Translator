@@ -23,7 +23,7 @@ To get started with the language translator application, follow these steps:
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/yourusername/language-translator.git
+   git clone https://github.com/a6ishek/language-translator.git
    ```
 
 2. **Setup Firebase Project**: Create a new Firebase project and configure it according to the Firebase documentation.
